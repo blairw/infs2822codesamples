@@ -34,9 +34,9 @@ class NavbarHelper {
 
 		// dark mode
 		if (selectedMap == "CartoDB_DarkMatter") {
-			setNavbarDarkMode(true);
+			NavbarHelper.setNavbarDarkMode(true);
 		} else {
-			setNavbarDarkMode(false);
+			NavbarHelper.setNavbarDarkMode(false);
 		}
 	}
 
