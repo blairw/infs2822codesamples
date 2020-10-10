@@ -4,9 +4,10 @@
 	  {
 		"type": "Feature",
 		"properties": {
-			"id": "SCIENTIA_LAWN",
+			"ID": "SCIENTIA_LAWN",
 			"name": "Scientia Lawn",
-			"popupContent": "By Blair Wang"
+			"author": "Blair Wang",
+			"description": "People like to take graduation photos here. 🎓"
 		},
 		"geometry": {
 		  "type": "Polygon",

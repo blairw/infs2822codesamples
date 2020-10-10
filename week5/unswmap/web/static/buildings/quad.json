@@ -4,9 +4,10 @@
 	  {
 		"type": "Feature",
 		"properties": {
-			"id": "E15_QUAD",
+			"ID": "E15_QUAD",
 			"name": "UNSW Quadrange",
-			"popupContent": "By Blair Wang"
+			"author": "Blair Wang",
+			"description": "A beautiful place. Great lawn, and a funky old-timey sundial which allegedly still works. ☀️"
 		},
 		"geometry": {
 		  "type": "Polygon",

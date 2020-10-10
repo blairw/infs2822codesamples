@@ -5,21 +5,32 @@ class MapHelper {
 	 * @param {Object.<string, string>} style A dictionary with `color`, `opacity`, `weight`, `dashArray`, etc.
 	 */
 	static processAddedUNSWFeature(incomingGeoJSON, style) {
-		var this_id = incomingGeoJSON["features"][0]["properties"]["id"];
+		var this_id = incomingGeoJSON["features"][0]["properties"]["ID"];
 		console.log("this_id = " + this_id);
 
 		var settings = {
 			onEachFeature: function(feature, layer) {
 				// https://leafletjs.com/examples/geojson/
-				if (feature.properties && feature.properties.popupContent) {
-					var preparedString = "<strong>" + feature.properties.name + "</strong>";
-					preparedString += "<br />" + feature.properties.popupContent;
+				var preparedString = "";
+				if (feature.properties && feature.properties["name"]) {
+					preparedString += "<strong>" + feature.properties["name"] + "</strong>";
+				}
+
+				if (feature.properties && feature.properties["author"]) {
+					preparedString += "<br /><em>Mapped by " + feature.properties["author"] + "</em>";
+				}
+
+				if (feature.properties && feature.properties["description"]) {
+					preparedString += "<p>" + feature.properties["description"] + "</p>";
+				}
+
+				if (preparedString.length > 0) {
 					layer.bindPopup(preparedString);
 				}
 		
 				// // https://stackoverflow.com/questions/14756420/emulate-click-on-leaflet-map-item
-				if (feature.properties && feature.properties.id) {
-					globalFeatureIDTracker[feature.id + ""] = layer._leaflet_id;
+				if (feature.properties && feature.properties["ID"]) {
+					globalFeatureIDTracker[feature["ID"] + ""] = layer._leaflet_id;
 				}
 			}
 		}
