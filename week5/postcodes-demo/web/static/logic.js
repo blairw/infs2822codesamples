@@ -12,8 +12,8 @@ function bodyDidLoad() {
 	globalMapObject = L.map('mapid').setView([-33.918, 151.23], 17);
 	globalTiles.addTo(globalMapObject);
 	
-	// $.get("postcodes_test/au-postcodes-Visvalingam-0.1.geojson", function(incomingGeoJSON) {
-	$.get("postcodes_test/au-postcodes.geojson", function(incomingGeoJSON) {
+	$.get("postcodes-geojson/au-postcodes-Visvalingam-0.1.geojson", function(incomingGeoJSON) {
+	// $.get("postcodes-geojson/au-postcodes.geojson", function(incomingGeoJSON) {
 		var mysubset = {
 			"type": "FeatureCollection",
     		"features": []
