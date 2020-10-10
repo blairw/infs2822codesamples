@@ -2,6 +2,19 @@
 
 Largely undocumented code samples for INFS2822.
 
-- [Week 2](week2/) - analysis of _Our World in Data_ COVID-19 dataset.
-- [Week 3](week3/) - simple example of `argv`.
-- [Week 4](week4/) - HTML/CSS/JS example of a 'todo-list app'.
+- [Week 2](week2/)
+    - Analysis of _Our World in Data_ COVID-19 dataset.
+    - Set up Python 3 venv: `numpy`, `pandas`, `pandasql`, `matplotlib`.
+
+- [Week 3](week3/) 
+    - Simple example of `argv`.
+    - No venv is needed.
+
+- [Week 4](week4/)
+    - HTML/CSS/JS example of a 'todo-list app'.
+    - Set up yarn in each folder with `yarn install`
+
+- [Week 5](week5/)
+    - Leaflet map demos
+    - For `census-geojson`, you will need a Python 3 venv with `geopandas`
+    - For the others, you need a Python 3 venv with `flask`, and set up yarn in each `web/static` with `yarn install`
