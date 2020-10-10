@@ -1,0 +1,11 @@
+{
+  "name": "todolistapp",
+  "version": "1.0.0",
+  "description": "The best INFS2822 todo list app ... so far!",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "underscore": "^1.11.0"
+  }
+}

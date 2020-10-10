@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todo 🍿</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="logic.js"></script>
+	</head>
+	<body>
+		<h1>Todo List App</h1>
+		<label for="input_newEntry">New entry:</label>
+		<input
+			id="input_newEntry"
+			name="input_newEntry"
+			type="text"
+			placeholder="new entry here"
+		/>
+		<button onclick="userDidClickCreate()">Create</button>
+
+		<table id="tasksTable">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name (description)</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody id="tbodyForTasks">
+			</tbody>
+		</table>
+	</body>
+</html>

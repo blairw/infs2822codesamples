@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todo 🍿</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/underscore/underscore-min.js"></script>
+		<script src="logic.js"></script>
+	</head>
+	<body onload="bodyDidLoad()">
+		<h1>Todo List App</h1>
+		<label for="input_newEntry">New entry:</label>
+		<input
+			id="input_newEntry"
+			name="input_newEntry"
+			type="text"
+			placeholder="new entry here"
+		/>
+		<button onclick="userDidClickCreate()">Create</button>
+		<button onclick="downloadJSON()">Download</button>
+		<button onclick="userDidClickRobertButton()">Robert</button>
+
+		<hr />
+
+		<h2>Upload existing file</h2>
+		<input id="fileUploader" type="file" />
+
+		<hr />
+
+		<table id="tasksTable">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name (description)</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody id="tbodyForTasks">
+			</tbody>
+		</table>
+	</body>
+</html>
