@@ -12,8 +12,8 @@ class MapHelper {
 			onEachFeature: function(feature, layer) {
 				// https://leafletjs.com/examples/geojson/
 				if (feature.properties && feature.properties.popupContent) {
-                    var preparedString = "<strong>" + feature.properties.name + "</strong>";
-                    preparedString += "<br />" + feature.properties.popupContent;
+					var preparedString = "<strong>" + feature.properties.name + "</strong>";
+					preparedString += "<br />" + feature.properties.popupContent;
 					layer.bindPopup(preparedString);
 				}
 		
@@ -34,5 +34,20 @@ class MapHelper {
 			"leaflet_id": Object.keys(addedFeature["_layers"])[0],
 			"captured_geojson_object": addedFeature
 		};
+	}
+
+	/**
+	 * Simulates a mouse click on a place on the map.
+	 * 
+	 * @param {Object} selectedPlace The logical ID of the place on the map.
+	 */
+	static simulateMouseClick(selectedPlace) {
+		var leafletID = globalFeatureIDTracker[selectedPlace]["leaflet_id"];
+		var capturedGeoJSONObject = globalFeatureIDTracker[selectedPlace]["captured_geojson_object"];
+		var layer = capturedGeoJSONObject.getLayer(leafletID);
+		
+		// https://stackoverflow.com/questions/14756420/emulate-click-on-leaflet-map-item
+		// fire event 'click' on target layer 
+		layer.fireEvent('click');
 	}
 }

@@ -1,21 +1,24 @@
 class NavbarHelper {
-	// https://stackoverflow.com/questions/14756420/emulate-click-on-leaflet-map-item
+	
+	/**
+	 * Handle user selection of place to simulate mouse click on.
+	 */
 	static selectionDidChange() {
 		var selectedPlace = $("#selectPlace").val();
 		
 		if (selectedPlace != "-1") {
-			var leafletID = globalFeatureIDTracker[selectedPlace]["leaflet_id"];
-			var capturedGeoJSONObject = globalFeatureIDTracker[selectedPlace]["captured_geojson_object"];
-			var layer = capturedGeoJSONObject.getLayer(leafletID);
-			//fire event 'click' on target layer 
-			layer.fireEvent('click');
+			MapHelper.simulateMouseClick(selectedPlace);
 
 			$("#selectPlace").val(-1);
 			$("#selectPlace").trigger('change');
-
 		}
 	}
 
+	/**
+	 * Handles user selection of the theme (map tiles being used 🗺), also potentially navbar dark mode.
+	 * 
+	 * @param {Object} selectedMap The Leaflet `L.tileLayer` objects, as made available through `MapTileHelper`.
+	 */
 	static changeMapTiles(selectedMap) {
 		// remove old
 		$("#togglefor_" + globalCurrentTilesSelection).removeClass("active");
@@ -38,7 +41,7 @@ class NavbarHelper {
 	}
 
 	/**
-	 * Sets dark mode (for the navigation bar only!) 😎
+	 * Sets navbar dark mode (for the navigation bar only!) 😎
 	 * 
 	 * @param {boolean} isDarkMode `true` for dark mode, `false` for light mode
 	 */
