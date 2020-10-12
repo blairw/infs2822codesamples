@@ -10,8 +10,10 @@ var globalFeatureIDTracker = {};
 
 // list of items to add
 var itemsToAdd = [
-	"buildings/quad.json"
-	, "buildings/scientia-lawn.json"
+	"buildings/quad.geojson"
+	, "buildings/scientia-lawn.geojson"
+	, "buildings/g14-robertwebster.geojson"
+	, "buildings/b16-colombo.geojson"
 ];
 
 function bodyDidLoad() {
@@ -25,7 +27,8 @@ function bodyDidLoad() {
 	globalCurrentTiles.addTo(globalMapObject);
 
 	itemsToAdd.forEach(function(item) {
-		$.get(item, function(incomingGeoJSON) {
+		$.get(item, function(incomingGeoJSONString) {
+			incomingGeoJSON = JSON.parse(incomingGeoJSONString);
 			MapHelper.processAddedUNSWFeature(incomingGeoJSON);
 		});
 	});
@@ -40,7 +43,8 @@ function bodyDidLoad() {
 		, "dashArray": "5"
 	};
 
-	$.get("buildings/example-journey.json", function(incomingGeoJSON) {
+	$.get("buildings/example-journey.geojson", function(incomingGeoJSONString) {
+		incomingGeoJSON = JSON.parse(incomingGeoJSONString);
 		MapHelper.processAddedUNSWFeature(incomingGeoJSON, tripStyle);
 	});
 

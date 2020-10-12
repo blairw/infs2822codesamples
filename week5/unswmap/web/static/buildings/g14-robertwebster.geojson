@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "G14",
+        "name": "Robert Webster",
+        "author": "Kevin Liang",
+        "description": "The Robert Webster Building easily accessible, with entrances from the Main Walkway and the Quad area near the Science Theatre."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.23099893331528,
+              -33.91755116065849
+            ],
+            [
+              151.2299770116806,
+              -33.91742317659838
+            ],
+            [
+              151.22993275523186,
+              -33.917636854226075
+            ],
+            [
+              151.23071059584618,
+              -33.91773478962636
+            ],
+            [
+              151.2307173013687,
+              -33.917699176766554
+            ],
+            [
+              151.2309680879116,
+              -33.917729225117995
+            ],
+            [
+              151.23099893331528,
+              -33.91755116065849
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

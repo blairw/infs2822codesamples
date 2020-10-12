@@ -39,6 +39,7 @@ class MapHelper {
 			settings.style = style;
 		}
 
+
 		var addedFeature = L.geoJSON(incomingGeoJSON, settings).addTo(globalMapObject);
 
 		globalFeatureIDTracker[this_id] = {
