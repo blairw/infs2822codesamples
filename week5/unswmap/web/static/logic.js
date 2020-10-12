@@ -28,7 +28,7 @@ function bodyDidLoad() {
 
 	itemsToAdd.forEach(function(item) {
 		$.get(item, function(incomingGeoJSONString) {
-			incomingGeoJSON = JSON.parse(incomingGeoJSONString);
+			var incomingGeoJSON = JSON.parse(incomingGeoJSONString);
 			MapHelper.processAddedUNSWFeature(incomingGeoJSON);
 		});
 	});
@@ -44,7 +44,7 @@ function bodyDidLoad() {
 	};
 
 	$.get("buildings/example-journey.geojson", function(incomingGeoJSONString) {
-		incomingGeoJSON = JSON.parse(incomingGeoJSONString);
+		var incomingGeoJSON = JSON.parse(incomingGeoJSONString);
 		MapHelper.processAddedUNSWFeature(incomingGeoJSON, tripStyle);
 	});
 
