@@ -1,0 +1,41 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+	  {
+		"type": "Feature",
+		"properties": {
+			"ID": "SCIENTIA_LAWN",
+			"name": "Scientia Lawn",
+			"author": "Blair Wang",
+			"description": "People like to take graduation photos here. 🎓"
+		},
+		"geometry": {
+		  "type": "Polygon",
+		  "coordinates": [
+			[
+			  [
+				151.2327517569065,
+				-33.917721434805685
+			  ],
+			  [
+				151.2326940894127,
+				-33.91800633719294
+			  ],
+			  [
+				151.2330038845539,
+				-33.91804974020739
+			  ],
+			  [
+				151.23306021094322,
+				-33.91776372506399
+			  ],
+			  [
+				151.2327517569065,
+				-33.917721434805685
+			  ]
+			]
+		  ]
+		}
+	  }
+	]
+  }
