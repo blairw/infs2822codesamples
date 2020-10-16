@@ -12,9 +12,11 @@
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="node_modules/select2/dist/js/select2.min.js"></script>
+		<script src="node_modules/papaparse/papaparse.min.js"></script>
 		<script src="logic.010.MapTileHelper.js"></script>
 		<script src="logic.050.MapHelper.js"></script>
 		<script src="logic.070.NavbarHelper.js"></script>
+		<script src="logic.080.ColourHelper.js"></script>
 		<script src="logic.090.ShowtimeHelper.js"></script>
 		<script src="logic.js"></script>
 	</head>
@@ -39,10 +41,8 @@
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-					<select id="selectPlace" onchange="NavbarHelper.selectionDidChange()" name="state">
-						<option value="-1">Search ...</option>
-						<option value="E15_QUAD">E15 Quadrange</option>
-						<option value="SCIENTIA_LAWN">Scientia Lawn</option>
+					<select id="selectPlace" onchange="NavbarHelper.selectionDidChange()" name="selectPlace">
+						<option value="-1">(Search ...)</option>
 					</select>
 				</form>
 			</div>

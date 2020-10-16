@@ -1,0 +1,15 @@
+{
+    "type":"FeatureCollection",
+    "features":[
+    {
+        "type":"Feature",
+		"properties": {
+			"ID": "G27_AGSM",
+			"name": "Australian Graduate School of Management (AGSM)",
+			"author": "Towfiq Ahamed",
+			"description": "AGSM is home to the postgraduate students providing excellent courses"
+        },
+        "geometry":{
+            "type":"Polygon",
+        "coordinates":[
+            [[151.23549163341522,-33.91817215884695],[151.2353843450546,-33.918497123837035],[151.23534679412842,-33.91848376913584],[151.23526632785797,-33.91879982983613],[151.23563647270203,-33.91887550616788],[151.2358295917511,-33.91878647518239],[151.23594224452972,-33.91822112625353],[151.23549163341522,-33.91817215884695]]]}}]}

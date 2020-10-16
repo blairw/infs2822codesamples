@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "H20_Civil_Engineering" 
+        "name": "UNSW Civil Enigneering" 
+        "author": "Theresa Jiang"
+        "description": "Civil Engineering building on UNSW main campus" 
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.23251169919968,
+              -33.91814099775539
+            ],
+            [
+              151.23248219490048,
+              -33.91828789994442
+            ],
+            [
+              151.23295694589615,
+              -33.91835244779588
+            ],
+            [
+              151.23298913240433,
+              -33.91819886834493
+            ],
+            [
+              151.23251169919968,
+              -33.91814099775539
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

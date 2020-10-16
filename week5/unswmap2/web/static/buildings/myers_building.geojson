@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": "K-M15",
+          "name": "Rupert Myers Building",
+          "author": "Rafella Angeline",
+          "description": "The place to get your eyes checked at the UNSW Optometry Clinic :D"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                151.23012989759445,
+                -33.91910921206219
+              ],
+              [
+                151.2299931049347,
+                -33.91975023065327
+              ],
+              [
+                151.23056441545486,
+                -33.91983258338657
+              ],
+              [
+                151.23070120811462,
+                -33.91919156541506
+              ],
+              [
+                151.23012989759445,
+                -33.91910921206219
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }

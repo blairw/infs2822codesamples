@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "ID": "D26_Biological_Sciences_North",
+            "name": "Biological Sciences North",
+            "author": "Lewes Liu",
+            "description": "Designed by Woods Bagot and delivered by Multiplex"
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [151.23491764068604, -33.91722396624409],
+                    [151.2348747253418, -33.9173886765145],
+                    [151.23503029346466, -33.91741093463473],
+                    [151.23497664928436, -33.91774035413436],
+                    [151.2352448701858, -33.91778041858124],
+                    [151.2353092432022, -33.91744654761501],
+                    [151.236006617546, -33.91754448323402],
+                    [151.2360602617263, -33.91740648301115],
+                    [151.23491764068604, -33.91722396624409]
+                ]
+            ]
+        }
+    }]
+}

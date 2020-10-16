@@ -1,0 +1,57 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+	  {
+		"type": "Feature",
+		"properties": {
+			"ID": "C6",
+			"name": "International House",
+			"author": "Oliver Jin",
+			"description": " Acommodation for international and local students. Nice and quiet place probably good view too but building looks a bit old "
+		},
+		"geometry": {
+		  "type": "Polygon",
+ "coordinates": [
+          [
+            [
+              151.22719958424568,
+              -33.91550673142131
+            ],
+            [
+              151.22718617320058,
+              -33.9155924270449
+            ],
+            [
+              151.22701451182365,
+              -33.91556905551975
+            ],
+            [
+              151.22694477438924,
+              -33.915930756976806
+            ],
+            [
+              151.22743293642998,
+              -33.915993080765126
+            ],
+            [
+              151.22749730944633,
+              -33.91564028300499
+            ],
+            [
+              151.22730284929276,
+              -33.915612459775645
+            ],
+            [
+              151.22732028365135,
+              -33.91551786072794
+            ],
+            [
+              151.22719958424568,
+              -33.91550673142131
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

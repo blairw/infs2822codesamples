@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "D16",
+        "name": "Goldstein Hall",
+        "author": "Younggil Tak",
+        "description": "I never took a class at this building.. umm.. what to say more.. nope. thanks :)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              151.23115852475166,
+              -33.91638705508641
+            ],
+            [
+              151.23110152781007,
+              -33.9167047929367
+            ],
+            [
+              151.23148038983345,
+              -33.91675264827208
+            ],
+            [
+              151.23153738677502,
+              -33.91643379768162
+            ],
+            [
+              151.23115852475166,
+              -33.91638705508641
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

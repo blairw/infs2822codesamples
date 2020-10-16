@@ -24,6 +24,10 @@ class MapHelper {
 					preparedString += "<p>" + feature.properties["description"] + "</p>";
 				}
 
+				if (feature.properties && feature.properties["ufoSightings"]) {
+					preparedString += "<p>UFO sightings: " + feature.properties["ufoSightings"] + "</p>";
+				}
+
 				if (preparedString.length > 0) {
 					layer.bindPopup(preparedString);
 				}

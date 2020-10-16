@@ -1,0 +1,45 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+            "ID": "MYERS_THEATRE",
+            "name": "Myers Theatre",
+            "author": "Elizabeth Zhou",
+            "description": "A wonderful lecture theatre near the Rupert Myers Building. It is able to hold 114 people and allows students to learn wonderful new things."
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                151.23009771108627,
+                -33.9192360807078
+              ],
+              [
+                151.23009234666824,
+                -33.91922272612242
+              ],
+              [
+                151.2301003932953,
+                -33.91936962644647
+              ],
+              [
+                151.23021572828293,
+                -33.919356271882016
+              ],
+              [
+                151.23020499944687,
+                -33.91926278987228
+              ],
+              [
+                151.23009771108627,
+                -33.9192360807078
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }

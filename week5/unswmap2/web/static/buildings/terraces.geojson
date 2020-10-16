@@ -1,0 +1,57 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+	  {
+		"type": "Feature",
+		"properties": {
+			"ID": "B8_UNIVERSITY_TERRACES",
+			"name": "University Terraces",
+			"author": "Tina Giang",
+			"description": "This is an apartment building conveniently located on UNSW. It also has a variety of different food options located below!"
+		},
+		"geometry": {
+		  "type": "Polygon",
+		  "coordinates": [
+			[
+            [
+              151.22766092419624,
+              -33.91531642005291
+            ],
+            [
+              151.22752144932747,
+              -33.9158228031642
+            ],
+            [
+              151.22814238071442,
+              -33.915917401873386
+            ],
+            [
+              151.2282322347164,
+              -33.91537095376332
+            ],
+            [
+              151.2280659377575,
+              -33.91535203390857
+            ],
+            [
+              151.22805520892143,
+              -33.915406567596186
+            ],
+            [
+              151.2278527021408,
+              -33.91537540549325
+            ],
+            [
+              151.22785940766335,
+              -33.91533979164736
+            ],
+            [
+              151.22766092419624,
+              -33.91531642005291
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

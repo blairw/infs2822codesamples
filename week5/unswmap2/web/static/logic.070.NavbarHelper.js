@@ -58,4 +58,10 @@ class NavbarHelper {
 			$("#mynavbar").addClass("bg-light");
 		}
 	}
+
+
+	static addItemToSelector(id, name) {
+		var newOption = new Option(name, id, false, false);
+		$('#selectPlace').append(newOption).trigger('change');
+	}
 }

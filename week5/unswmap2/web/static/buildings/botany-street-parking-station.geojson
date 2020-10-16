@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": "H25_BOTANY_STREET_PARKING_STATION",
+		      "name": "UNSW Botany Street Parking Station",
+			    "author": "Caitlin O'Dowd",
+		    	"description": "A site for paid, on campus parking"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+          [
+            [
+              151.2337052822113,
+              -33.91818996517988
+            ],
+            [
+              151.23363554477692,
+              -33.91857280043762
+            ],
+            [
+              151.2352019548416,
+              -33.91880873293748
+            ],
+            [
+              151.23529851436615,
+              -33.918434801880196
+            ],
+            [
+              151.2337052822113,
+              -33.91818996517988
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

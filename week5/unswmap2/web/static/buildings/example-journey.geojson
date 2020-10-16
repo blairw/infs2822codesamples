@@ -3,7 +3,9 @@
     "features": [
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {
+          "ID": "EXAMPLE_JOURNEY"
+        },
         "geometry": {
           "type": "LineString",
           "coordinates": [
