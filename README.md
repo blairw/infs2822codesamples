@@ -1,6 +1,6 @@
 # infs2822codesamples
 
-Largely undocumented code samples for INFS2822.
+Code samples for INFS2822.
 
 [Week 2](week2/)
 - Analysis of _Our World in Data_ COVID-19 dataset.
@@ -15,6 +15,7 @@ Largely undocumented code samples for INFS2822.
 - Set up yarn in each folder with `yarn install`
 
 [Week 5](week5/)
+- Comes with a [README.md](week5/README.md) - please read this!
 - Leaflet map demos
 - For `census-geojson`, you will need a Python 3 venv with `geopandas`
 - For the others, you need a Python 3 venv with `flask`, and set up yarn in each `web/static` with `yarn install`
