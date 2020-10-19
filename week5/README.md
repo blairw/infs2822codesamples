@@ -6,6 +6,10 @@ As noted on the homepage for this code samples repo:
 - For the others, you need a Python 3 venv with `flask`, and set up yarn in each `web/static` with `yarn install`
 - For `postcodes-demo`, you will need a folder called `postcodes-geojson` where you place the files generated from `census-geo-json`.
 
+
+&mdash;
+
+
 Students have sent in some questions which I answer below:
 
 **1. You have a folder called `web/static`. Did you create this folder manually? Or was it automatically generated when you run flask or something like the .venv folder that was automatically created when we create a new virtual environment?**
@@ -45,6 +49,6 @@ yarn add @ttskch/select2-bootstrap4-theme --save
 Error 404 means that the expected files did not exist. This is usually a case of a missing `yarn install`.
 
 
---
+&mdash;
 
 Thank you to Rafella Angeline and Hillary Mulyadi for volunteering their time to provide feedback on this document. Your efforts to help your peers are highly valued.
