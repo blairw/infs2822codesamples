@@ -1,0 +1,41 @@
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "ID": "F23_MATHEWS",
+            "name":"F23 Mathews",
+            "author":"Matthew Hoppitt",
+            "description":"The Mathews Building is located near the Mathews Theatres and Sir John Clancy Auditorium, boasting over 750sqm of versatile space over three wings."
+         },
+         "geometry":{
+            "type":"Polygon",
+            "coordinates":[
+               [
+                  [
+                     151.23407743871212,
+                     -33.917597902615135
+                  ],
+                  [
+                     151.2340546399355,
+                     -33.91771308804169
+                  ],
+                  [
+                     151.2346936762333,
+                     -33.91779822499603
+                  ],
+                  [
+                     151.2347151339054,
+                     -33.917680257428735
+                  ],
+                  [
+                     151.23407743871212,
+                     -33.917597902615135
+                  ]
+               ]
+            ]
+         }
+      }
+   ]
+}

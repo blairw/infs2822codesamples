@@ -20,6 +20,10 @@ class MapHelper {
 					preparedString += "<br /><em>Mapped by " + feature.properties["author"] + "</em>";
 				}
 
+				if (feature.properties && feature.properties["ID"]) {
+					preparedString += "<br /><em>ID: <code>" + feature.properties["ID"] + "</pre></code>";
+				}
+
 				if (feature.properties && feature.properties["description"]) {
 					preparedString += "<p>" + feature.properties["description"] + "</p>";
 				}

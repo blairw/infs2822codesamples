@@ -13,14 +13,12 @@ var itemsToAdd = [
 	"buildings/quad.geojson"
 	, "buildings/scientia-lawn.geojson"
 	, "buildings/b16.geojson"
-	// , "buildings/c27.geojson" // unbounded LineString
 	, "buildings/d26.geojson"
-	// , "buildings/e24.geojson" // unbounded LineString
-	, "buildings/f23.geojson"
+	, "buildings/F23_Mathews.geojson"
 	, "buildings/g14.geojson"
 	, "buildings/g17.geojson"
-	, "buildings/k15.geojson"
-	, "buildings/myers_theatre.geojson"
+	, "buildings/K15.geojson"
+	, "buildings/myers_theater.geojson"
 	, "buildings/botany-street-parking-station.geojson"
 	, "buildings/N18_BarkerStreetParking.geojson"
 	, "buildings/New_College_L6.geojson"
@@ -29,7 +27,19 @@ var itemsToAdd = [
 	, "buildings/agsm-building.geojson"
 	, "buildings/terraces.geojson"
 	, "buildings/D16 Goldstein Hall.geojson"
-	, "buildings/myers_building.geojson"
+	, "buildings/batch2/C27.geojson"
+	, "buildings/batch2/F25_Samuels.geojson"
+	, "buildings/batch2/G6 _Blockhouse.geojson"
+	, "buildings/batch2/h6-tyree.geojson"
+	, "buildings/batch2/K14.geojson"
+	, "buildings/batch2/Pavilion.geojson"
+	, "buildings/batch2/PhilipAlavamap.geojson"
+	, "buildings/batch2/RedCentre.geojson"
+	, "buildings/batch2/Nida Parade Theatre.geojson"
+	, "buildings/batch2/C22 Chancellery.geojson"
+	// , "buildings/e24.geojson" // unbounded LineString
+	// , "buildings/batch2/d2nida.geojson" // no props
+	// , "buildings/Hilmer.geojson" // no properties
 	// , "buildings/H20CivilEngineering.geojson" // missing commas
 	// , "buildings/k17.geojson" // incorrect shape
 ];
@@ -41,7 +51,7 @@ var globalMaxUFOSightings;
 
 // Colours
 var weakEndRGB = {red: 0, green: 255, blue: 0};
-var midwayRGB = {red: 200, green: 200, blue: 0};
+var midwayRGB = {red: 255, green: 255, blue: 0};
 var strongEndRGB = {red: 255, green: 0, blue: 0};
 
 function bodyDidLoad() {
@@ -62,8 +72,8 @@ function bodyDidLoad() {
 		for (var i = 1; i < ufoArray.data.length; i++) {
 			// generate dictionary
 			var thisUNSWFeature = ufoArray.data[i][0];
-			var thisFeatureUFOSightings = ufoArray.data[i][1];
-			globalUFODictionary[thisUNSWFeature] = parseInt(thisFeatureUFOSightings);
+			var thisFeatureUFOSightings = parseInt(ufoArray.data[i][1]);
+			globalUFODictionary[thisUNSWFeature] = thisFeatureUFOSightings;
 
 			// update min and max
 			if (!globalMinUFOSightings) globalMinUFOSightings = thisFeatureUFOSightings;
@@ -104,7 +114,7 @@ function bodyDidLoad() {
 	// Example: lines
 
 	var tripStyle = {
-		"color": "red"
+		"color": "gray"
 		, "weight": 3
 		, "opacity": 0.5
 		, "dashArray": "5"
