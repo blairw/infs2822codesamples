@@ -23,3 +23,6 @@ Code samples for INFS2822.
 
 [Week 7](week7/)
 - Python packages to install in your `venv` are noted in the comments on the top of `scraper.py` ;)
+
+[Week 8](week8/)
+- ... TBC
