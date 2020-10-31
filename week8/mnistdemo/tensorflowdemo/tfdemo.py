@@ -1,29 +1,55 @@
-# python3 -m pip install --upgrade keras tensorflow
+# python3 -m pip install --upgrade pip
+# python3 -m pip install --upgrade wheel
+# python3 -m pip install --upgrade tensorflow keras
+# python3 -m pip install --upgrade pandas numpy
 # python3 -m pip list | grep numpy
 # ^ which version of numpy is installed?
 
 # Tensorflow models
-from keras.callbacks import EarlyStopping
-from keras.models import Sequential
-from keras.layers.core import Dense, Dropout, Flatten, Reshape
-from keras.layers.convolutional import Conv2D
-from keras.layers.pooling import MaxPooling2D
-from keras.optimizers import Adadelta, Adam, RMSprop
-from keras.utils import to_categorical
+import tensorflow as tf
+import pandas as pd
+import numpy as np
 
 # If an error such as "OMP: Error #15: Initializing libiomp5.dylib, but found libiomp5.dylib already initialized." occurs,
 # include:
 # import os
 # os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
-model = Sequential()
-model.add(Reshape((28,28,1), input_shape=(28*28,)))
-model.add(Conv2D(64, (3, 3), activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Dropout(0.25))
-model.add(Flatten())
-model.add(Dense(128, activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(10, activation='softmax'))
+import mnist_reader
+X_train, y_train = mnist_reader.load_mnist('../temp', kind='train')
+X_test, y_test = mnist_reader.load_mnist('../temp', kind='t10k')
+X_train, X_test = X_train / 255.0, X_test / 255.0
+
+model = tf.keras.Sequential([
+    tf.keras.layers.Flatten(input_shape=(28, 28)),
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(10)
+])
 
 print(model.summary()) # displaying our built model
+
+model.compile(optimizer='adam',
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              metrics=['accuracy'])
+
+DATASET_GO_UP_TO = 1000
+model.fit(X_train[1:DATASET_GO_UP_TO], y_train[1:DATASET_GO_UP_TO],
+epochs=5)
+
+y_pred = model.predict(X_test)
+df_results = pd.DataFrame({
+    "true_value": y_test
+})
+
+df_results["is_correct"] = 0
+for i, row in df_results.iterrows():
+    predicted_value = np.argmax(y_pred[i])
+    df_results.at[i, 'predicted_value'] = predicted_value
+    if df_results.at[i, 'true_value'] == predicted_value:
+        df_results.at[i, 'is_correct'] = 1
+
+df_results.to_csv("results_tfkeras" + "_" + str(DATASET_GO_UP_TO) + ".csv")
+correct_count = df_results['is_correct'].sum()
+row_count = df_results.shape[0]
+percentage_success = correct_count / row_count
+print("How many were calculated correctly? " + str(correct_count) + "/" + str(row_count) + " (" + str(percentage_success) + "%)")
