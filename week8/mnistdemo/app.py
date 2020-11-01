@@ -66,7 +66,7 @@ for model_name, model in models.items():
     correct_count = df_results['is_correct'].sum()
     row_count = df_results.shape[0]
     percentage_success = correct_count / row_count
-    print("How many were calculated correctly? " + str(correct_count) + "/" + str(row_count) + " (" + str(percentage_success) + "%)")
+    print("How many were predicted correctly? " + str(correct_count) + "/" + str(row_count) + " (" + str(percentage_success) + "%)")
 
 
 # SKLEARN RESULTS:
