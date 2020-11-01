@@ -68,10 +68,14 @@ for model_name, model in models.items():
     percentage_success = correct_count / row_count
     print("How many were calculated correctly? " + str(correct_count) + "/" + str(row_count) + " (" + str(percentage_success) + "%)")
 
+
 # SKLearn Results:
 # --------
+# [Mac] Find CPU using Terminal command:
+#   sysctl -a | grep machdep.cpu.brand_string
+
+# These results with the CPU `Intel(R) Xeon(R) CPU X5675 @ 3.07GHz`
 # With dataset [1:10],  8s,     success rate 2976/10000 (0.2976%)
 # With dataset [1:20],  15s,    success rate 3064/10000 (0.3064%)
 # With dataset [1:100], 52s,    success rate 5481/10000 (0.5481%)
 # With dataset [1:200], 1m 39s, success rate 6146/10000 (0.6146%)
-
