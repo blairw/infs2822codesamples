@@ -69,13 +69,22 @@ for model_name, model in models.items():
     print("How many were calculated correctly? " + str(correct_count) + "/" + str(row_count) + " (" + str(percentage_success) + "%)")
 
 
-# SKLearn Results:
-# --------
-# [Mac] Find CPU using Terminal command:
-#   sysctl -a | grep machdep.cpu.brand_string
+# SKLEARN RESULTS:
+# --------------------------------------------------------------------
 
-# These results with the CPU `Intel(R) Xeon(R) CPU X5675 @ 3.07GHz`
-# With dataset [1:10],  8s,     success rate 2976/10000 (0.2976%)
-# With dataset [1:20],  15s,    success rate 3064/10000 (0.3064%)
-# With dataset [1:100], 52s,    success rate 5481/10000 (0.5481%)
-# With dataset [1:200], 1m 39s, success rate 6146/10000 (0.6146%)
+# [Mac] Find CPU using Terminal command:
+# sysctl -a | grep machdep.cpu.brand_string
+# 
+# [Windows] Identify CPU by opening start menu,
+# searching for 'System Information',
+# then reading the row for 'Processor' under 'System Summary'.
+
+# CPU FOR THESE RESULTS WAS:
+# `Intel(R) Xeon(R) CPU X5675 @ 3.07GHz`
+#
+# With dataset [1:10],   8s,      success rate 2976/10000 (0.2976%)
+# With dataset [1:20],   ??s,     success rate ????/10000 (0.????%)
+# With dataset [1:100],  ??s,     success rate ????/10000 (0.????%)
+# With dataset [1:200],  ??m ??s, success rate ????/10000 (0.????%)
+# With dataset [1:1000], ??m ??s, success rate ????/10000 (0.????%)
+# With dataset [1:2000], ??m ??s, success rate ????/10000 (0.????%)

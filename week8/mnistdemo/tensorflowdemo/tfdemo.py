@@ -53,3 +53,23 @@ correct_count = df_results['is_correct'].sum()
 row_count = df_results.shape[0]
 percentage_success = correct_count / row_count
 print("How many were calculated correctly? " + str(correct_count) + "/" + str(row_count) + " (" + str(percentage_success) + "%)")
+
+# TENSORFLOW (KERAS) RESULTS:
+# --------------------------------------------------------------------
+
+# [Mac] Find CPU using Terminal command:
+# sysctl -a | grep machdep.cpu.brand_string
+# 
+# [Windows] Identify CPU by opening start menu,
+# searching for 'System Information',
+# then reading the row for 'Processor' under 'System Summary'.
+
+# CPU FOR THESE RESULTS WAS:
+# `Intel(R) Xeon(R) CPU X5675 @ 3.07GHz`
+#
+# With dataset [1:10],   ??s,     success rate ????/10000 (0.????%)
+# With dataset [1:20],   ??s,     success rate ????/10000 (0.????%)
+# With dataset [1:100],  ??s,     success rate ????/10000 (0.????%)
+# With dataset [1:200],  ??m ??s, success rate ????/10000 (0.????%)
+# With dataset [1:1000], ??m ??s, success rate ????/10000 (0.????%)
+# With dataset [1:2000], ??m ??s, success rate ????/10000 (0.????%)
