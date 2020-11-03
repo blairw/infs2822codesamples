@@ -52,7 +52,7 @@ df_results.to_csv("results_tfkeras" + "_" + str(DATASET_GO_UP_TO) + ".csv")
 correct_count = df_results['is_correct'].sum()
 row_count = df_results.shape[0]
 percentage_success = correct_count / row_count
-print("How many were predicted correctly? " + str(correct_count) + "/" + str(row_count) + " (" + str(percentage_success) + "%)")
+print("How many were predicted correctly? " + str(correct_count) + "/" + str(row_count) + " (" + str(percentage_success * 100) + "%)")
 
 # TENSORFLOW (KERAS) RESULTS:
 # --------------------------------------------------------------------
