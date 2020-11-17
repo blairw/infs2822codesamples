@@ -1,7 +1,7 @@
 # python3 -m pip install --upgrade pip
 # python3 -m pip install --upgrade wheel
 # python3 -m pip install --upgrade tensorflow keras
-# python3 -m pip install --upgrade pandas numpy
+
 # python3 -m pip list | grep numpy
 # ^ which version of numpy is installed?
 
@@ -62,7 +62,7 @@ print("How many were predicted correctly? " + str(correct_count) + "/" + str(row
 # 
 # [Windows] Identify CPU by opening start menu,
 # searching for 'System Information',
-# then reading the row for 'Processor' under 'System Summary'.
+# then reading the row for 'Processor' under 'System Summary'. (or run: `lscpu`)
 
 # CPU FOR THESE RESULTS WAS:
 # `Intel(R) Xeon(R) CPU X5675 @ 3.07GHz`

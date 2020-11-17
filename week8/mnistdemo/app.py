@@ -4,11 +4,11 @@
 # sudo apt-get install python3-dev python3-pip python3-venv python3-wheel -y
 
 
-# python3 -m pip install --upgrade pandas prettytable sklearn wget matplotlib
+# python3 -m pip install --upgrade pandas sklearn wget matplotlib
 # python3 -m pip list | grep numpy
 # ^ which version of numpy is installed?
+# numpy           1.19.4
 
-from prettytable import PrettyTable
 from sklearn import model_selection
 from sklearn import linear_model, ensemble, tree, neighbors, svm
 
@@ -26,11 +26,11 @@ X_test, y_test = mnist_reader.load_mnist('temp', kind='t10k')
 
 
 
-# explore images
-# --------------
+# # explore images
+# # --------------
 # import numpy as np
 # from matplotlib import pyplot as plt
-# explore_index = 55 # change to explore
+# explore_index = 7 # change to explore
 # raw_image_data = X_test[explore_index] 
 # print(str(y_test[explore_index]) + " " + fmnistfetch.category_id_to_string(y_train[explore_index]))
 # float_image_data = np.array(raw_image_data, dtype='float')
@@ -42,7 +42,7 @@ X_test, y_test = mnist_reader.load_mnist('temp', kind='t10k')
 
 # SKLearn models
 # --------------
-DATASET_GO_UP_TO = 10
+DATASET_GO_UP_TO = 100
 import pandas as pd
 models = {} # dictionary of models
 models["GBC"] = ensemble.GradientBoostingClassifier(n_estimators=500,
@@ -80,7 +80,7 @@ for model_name, model in models.items():
 # then reading the row for 'Processor' under 'System Summary'.
 
 # CPU FOR THESE RESULTS WAS:
-# `Intel(R) Xeon(R) CPU X5675 @ 3.07GHz`
+# `Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz`
 #
 # With dataset [1:10],   8s,      success rate 2976/10000 (0.2976%)
 # With dataset [1:20],   ??s,     success rate ????/10000 (0.????%)
